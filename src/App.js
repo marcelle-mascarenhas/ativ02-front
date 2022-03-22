@@ -47,15 +47,17 @@ function App() {
           value={idade} readOnly={block} type="number" onChange={handleIdadeChange} />
       </p>
 
+      <p>Vai fazer aniversário esse ano? Se sim, marque a caixa abaixo.<br />
+        <input type="checkbox" onChange={handleBtChecked} value={checked} checked={checked} />
+      </p>
+
       <button onClick={handleBtCalculaClick}>Calcular</button> <br />
       <button onClick={handleBtLimparClick}>Limpar</button>
 
       <p>Ano de Nascimento:<br />
         <input readOnly value={ano} />
       </p>
-      <p>Já fez aniversário esse ano?<br />
-        <input type="checkbox" onChange={handleBtChecked} value={checked} checked={checked} />
-      </p>
+      
 
 
     </div>
